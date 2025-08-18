@@ -4,58 +4,65 @@ document.addEventListener('DOMContentLoaded', function() {
         featured: [
             {
                 id: 1,
-                title: "Fight Against Corruption - Featured Video 1",
+                title: "Arun Bhatia speaks on Democracy",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/heihZR83RWA",
+                youtubeUrl: "https://www.youtube.com/embed/mQvG-4b2nhk",
                 alt: "Arun Bhatia featured video 1"
             },
             {
                 id: 2,
-                title: "Fight Against Corruption - Featured Video 2",
+                title: "Arun Bhatia's achievements for pune during his stint in various positions in Pune.",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/dA6nFK2p41k",
+                youtubeUrl: "https://www.youtube.com/embed/p_iv5q-vzJs ",
                 alt: "Arun Bhatia featured video 2"
             },
             {
                 id: 3,
-                title: "Fight Against Corruption - Featured Video 3",
+                title: "Arun Bhatia promises to eradicate corruption from Pune city in 60 days!",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/BtrZa7qV8TI",
+                youtubeUrl: "https://www.youtube.com/embed/OMMZX91dqEA",
                 alt: "Arun Bhatia featured video 3"
             },
             {
                 id: 4,
-                title: "Fight Against Corruption - Featured Video 4",
+                title: "Aurangzeb Anger Ignites Nagpur Nightmare; CM Devendra Fadnavis Blames Film 'Chhaava' For Conflict?",
                 thumbnail: "i/arun3.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/N2yBjcrcO70",
+                youtubeUrl: "https://www.youtube.com/embed/gM6NK_qOFFs?start=1778",
                 alt: "Arun Bhatia featured video 4"
             },
             {
                 id: 5,
-                title: "Fight Against Corruption - Featured Video 5",
+                title: "Arun Bhatia Final",
                 thumbnail: "i/arun-dreams.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/mmh__OwDEDg",
+                youtubeUrl: "https://www.youtube.com/embed/tdISQDd3fCg",
                 alt: "Arun Bhatia featured video 5"
             },
             {
                 id: 6,
-                title: "Fight Against Corruption - Featured Video 6",
+                title: "Arun Bhatia Exclusive",
                 thumbnail: "i/arunclose-up.jpeg",
-                youtubeUrl: "https://www.youtube.com/embed/bCG-ehU6jt4",
+                youtubeUrl: "https://www.youtube.com/embed/sX__lVQbQGY",
                 alt: "Arun Bhatia featured video 6"
             },
             {
                 id: 7,
-                title: "Fight Against Corruption - Featured Video 7",
+                title: "The Newshour Debate: Honesty Punished - Full Debate",
                 thumbnail: "i/arun_sitting.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/3Mdvp88hzp8",
+                youtubeUrl: "https://www.youtube.com/embed/O2y_r8Cs6u4?start=595",
                 alt: "Arun Bhatia featured video 7"
             },
             {
                 id: 8,
-                title: "Fight Against Corruption - Featured Video 8",
+                title: "Arun Bhatia, Independent || Pune, Maharashtra",
                 thumbnail: "i/arun.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/7ppGjJnwQgU",
+                youtubeUrl: "https://www.youtube.com/embed/uPH7PDvczQc",
+                alt: "Arun Bhatia featured video 8"
+            },
+            {
+                id: 9,
+                title: "Pudhari News | पुणे पोलिस आयुक्त अमितेश कुमारांची बदली करा - अरुण भाटिया",
+                thumbnail: "i/arun.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/NAyLIsqC7cc",
                 alt: "Arun Bhatia featured video 8"
             }
         ],
@@ -327,12 +334,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to create media card HTML with embedded YouTube video
     function createMediaCard(video) {
-        const isFeatured = video.id <= 8;
-        const columnClass = isFeatured ? 'col-lg-3' : 'col-lg-4';
-        const headingTag = isFeatured ? '4' : '3';
         
         return `
-            <div class="${columnClass} mb-4">
+            <div class="col-lg-4 mb-4">
                 <article class="media-card" data-video-id="${video.id}">
                     <div class="video-container">
                         <iframe 
@@ -348,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </iframe>
                     </div>
                     <div class="media-info">
-                        <h${headingTag}>${video.title}</h${headingTag}>
+                        <h4>${video.title}</h4>
                     </div>
                 </article>
             </div>
