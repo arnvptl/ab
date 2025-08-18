@@ -809,7 +809,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const targetSection = document.getElementById(`${sectionId}-section`);
                 if (targetSection) {
                     // Show media section first
-                    switchToSection('media');
+                                    // First ensure we're in the media1 section for language buttons
+                const buttonText = this.textContent.trim();
+                if (buttonText === 'English' || buttonText === 'हिंदी' || buttonText === 'मराठी') {
+                    switchToSection('media1');
+                } else {
+                    // For interviews, debates, speeches, switch to media2
+                    switchToSection('media2');
+                }
                     
                     // Then scroll to the specific language section
                     setTimeout(() => {

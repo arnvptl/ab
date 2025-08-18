@@ -117,7 +117,7 @@ body {
   padding: 1rem 1.5rem;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   transition: all 0.2s ease;
   border-radius: 0 25px 25px 0;
@@ -270,7 +270,9 @@ h6 { font-size: 1.2rem; }
   width: 100%;
   height: auto;
 }
-
+.profile-image-float{
+  max-width: 500px;
+}
 .profile-image-float:hover,
 .book-cover-float:hover {
   transform: translateY(-5px);
@@ -582,11 +584,16 @@ h6 { font-size: 1.2rem; }
   padding: 1rem;
   border: none;
 }
-
+.table th:first-child {
+  border-right: 3px solid var(--border-light);
+}
 .table td {
   padding: 1rem;
   border-top: 1px solid var(--border-light);
   vertical-align: top;
+}
+.table td:first-child {
+  border-right: 2px solid var(--border-light);
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -663,7 +670,6 @@ h6 { font-size: 1.2rem; }
 /* Footer */
 .site-footer {
   background: var(--background-light);
-  color: white;
   padding: 2rem 0;
   margin-left: 280px;
   transition: margin-left 0.3s ease;
