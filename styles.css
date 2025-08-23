@@ -158,6 +158,83 @@ body {
   transform: scale(1.05);
 }
 
+/* Hide mobile toggle on mobile devices */
+@media (max-width: 767.98px) {
+  .mobile-toggle {
+    display: none !important;
+  }
+}
+
+/* Mobile Navigation Bar */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, var(--primary-color), #C53030);
+  color: white;
+  z-index: 999;
+  box-shadow: 0 2px 10px var(--shadow-hover);
+  padding: 0.75rem 1rem;
+}
+
+/* Ensure mobile nav doesn't interfere with sidebar on mobile */
+@media (max-width: 767.98px) {
+  .sidebar.show ~ .mobile-nav {
+    z-index: 997;
+  }
+}
+
+.mobile-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.mobile-nav-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile-nav-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  color: white;
+}
+
+.mobile-nav-subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.9;
+  color: white;
+}
+
+.mobile-nav-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mobile-nav-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.mobile-nav-toggle:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
 /* Main Content */
 .main-content {
   margin-left: 280px;
@@ -498,7 +575,7 @@ h6 { font-size: 1.2rem; }
 
 /* Book Section */
 .book-section {
-  background: var(--background-section);
+  background: var(--background-gray);
   border-radius: 20px;
   padding: 3rem;
   margin: 2rem 0;
@@ -646,7 +723,7 @@ h6 { font-size: 1.2rem; }
 
 /* Contact Section */
 .contact-section {
-  background: var(--background-section);
+  background: var(--background-gray);
   border-radius: 20px;
   padding: 3rem;
   margin: 2rem 0;
@@ -707,6 +784,7 @@ h6 { font-size: 1.2rem; }
   .sidebar {
     width: 320px;
     transform: translateX(-100%);
+    z-index: 1001;
   }
   
   .sidebar.show {
@@ -764,6 +842,8 @@ h6 { font-size: 1.2rem; }
   .sidebar {
     width: 85vw;
     max-width: 300px;
+    z-index: 1001;
+    top: 0;
   }
   
   .sidebar-title {
@@ -811,6 +891,18 @@ h6 { font-size: 1.2rem; }
   
   .home-banner-img {
     width: 95%;
+  }
+  
+  /* Mobile navigation adjustments */
+  .main-content {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+  
+  /* Ensure sidebar doesn't overlap mobile nav */
+  .sidebar.show {
+    top: 0;
+    height: 100vh;
   }
 }
 
@@ -863,7 +955,7 @@ h6 { font-size: 1.2rem; }
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 998;
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease;
