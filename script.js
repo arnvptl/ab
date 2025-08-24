@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Dynamic Media Configuration with real YouTube links
+    // Dynamic Media Configuration with real YouTube links and tags
     const mediaConfig = {
         featured: [
             {
@@ -7,333 +7,436 @@ document.addEventListener('DOMContentLoaded', function() {
                 title: "Arun Bhatia speaks on Democracy",
                 thumbnail: "i/arun-detective.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/mQvG-4b2nhk",
-                alt: "Arun Bhatia featured video 1"
+                alt: "Arun Bhatia featured video 1",
+                language: "english",
+                contentType: "speech"
             },
             {
                 id: 2,
                 title: "Arun Bhatia's achievements for pune during his stint in various positions in Pune.",
                 thumbnail: "i/arun-angry.webp",
                 youtubeUrl: "https://www.youtube.com/embed/p_iv5q-vzJs ",
-                alt: "Arun Bhatia featured video 2"
+                alt: "Arun Bhatia featured video 2",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 3,
                 title: "Arun Bhatia promises to eradicate corruption from Pune city in 60 days!",
                 thumbnail: "i/arun2.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/OMMZX91dqEA",
-                alt: "Arun Bhatia featured video 3"
+                alt: "Arun Bhatia featured video 3",
+                language: "english",
+                contentType: "speech"
             },
             {
                 id: 4,
                 title: "Aurangzeb Anger Ignites Nagpur Nightmare; CM Devendra Fadnavis Blames Film 'Chhaava' For Conflict?",
                 thumbnail: "i/arun3.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/gM6NK_qOFFs?start=1778",
-                alt: "Arun Bhatia featured video 4"
+                alt: "Arun Bhatia featured video 4",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 5,
                 title: "Arun Bhatia Final",
                 thumbnail: "i/arun-dreams.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/tdISQDd3fCg",
-                alt: "Arun Bhatia featured video 5"
+                alt: "Arun Bhatia featured video 5",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 6,
                 title: "Arun Bhatia Exclusive",
                 thumbnail: "i/arunclose-up.jpeg",
                 youtubeUrl: "https://www.youtube.com/embed/sX__lVQbQGY",
-                alt: "Arun Bhatia featured video 6"
+                alt: "Arun Bhatia featured video 6",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 7,
                 title: "The Newshour Debate: Honesty Punished - Full Debate",
                 thumbnail: "i/arun_sitting.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/O2y_r8Cs6u4?start=595",
-                alt: "Arun Bhatia featured video 7"
+                alt: "Arun Bhatia featured video 7",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 8,
                 title: "Arun Bhatia, Independent || Pune, Maharashtra",
                 thumbnail: "i/arun.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/uPH7PDvczQc",
-                alt: "Arun Bhatia featured video 8"
+                alt: "Arun Bhatia featured video 8",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 9,
-                title: "Pudhari News | पुणे पोलिस आयुक्त अमितेश कुमारांची बदली करा - अरुण भाटिया",
+                title: "Pudhari News | पुणे पोलिस आयुक्त अमितेश कुमारांची बदली करा - अरुण भाटिया",
                 thumbnail: "i/arun.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/NAyLIsqC7cc",
-                alt: "Arun Bhatia featured video 8"
+                alt: "Arun Bhatia featured video 8",
+                language: "marathi",
+                contentType: "interview"
             }
         ],
-        english: [
+        allVideos: [
+            // English Videos
             {
-                id: 4,
+                id: 10,
                 title: "English Media Coverage 1",
                 thumbnail: "i/arun-detective.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/hNo1C9Zgx9k",
-                alt: "English media coverage 1"
-            },
-            {
-                id: 5,
-                title: "English Media Coverage 2",
-                thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/sX__lVQbQGY",
-                alt: "English media coverage 2"
-            },
-            {
-                id: 6,
-                title: "English Media Coverage 3",
-                thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/NAyLIsqC7cc",
-                alt: "English media coverage 3"
-            },
-            {
-                id: 7,
-                title: "English Media Coverage 4",
-                thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/N2yBjcrcO70",
-                alt: "English media coverage 4"
-            },
-            {
-                id: 8,
-                title: "English Media Coverage 5",
-                thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/mmh__OwDEDg",
-                alt: "English media coverage 5"
-            },
-            {
-                id: 9,
-                title: "English Media Coverage 6",
-                thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/bCG-ehU6jt4",
-                alt: "English media coverage 6"
-            },
-            {
-                id: 10,
-                title: "English Media Coverage 7",
-                thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/3Mdvp88hzp8",
-                alt: "English media coverage 7"
+                alt: "English media coverage 1",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 11,
-                title: "English Media Coverage 8",
+                title: "English Media Coverage 2",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/7ppGjJnwQgU",
-                alt: "English media coverage 8"
+                youtubeUrl: "https://www.youtube.com/embed/sX__lVQbQGY",
+                alt: "English media coverage 2",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 12,
-                title: "English Media Coverage 9",
+                title: "English Media Coverage 3",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/O2y_r8Cs6u4",
-                alt: "English media coverage 9"
-            }
-        ],
-        hindi: [
+                youtubeUrl: "https://www.youtube.com/embed/NAyLIsqC7cc",
+                alt: "English media coverage 3",
+                language: "english",
+                contentType: "speech"
+            },
             {
                 id: 13,
-                title: "हिंदी मीडिया कवरेज 1",
+                title: "English Media Coverage 4",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/BnYbx2YkTrM",
-                alt: "Hindi media coverage 1"
+                youtubeUrl: "https://www.youtube.com/embed/N2yBjcrcO70",
+                alt: "English media coverage 4",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 14,
-                title: "हिंदी मीडिया कवरेज 2",
+                title: "English Media Coverage 5",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/hUsAk6swjUc",
-                alt: "Hindi media coverage 2"
+                youtubeUrl: "https://www.youtube.com/embed/mmh__OwDEDg",
+                alt: "English media coverage 5",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 15,
-                title: "हिंदी मीडिया कवरेज 3",
+                title: "English Media Coverage 6",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/tSDJFI8kbtU",
-                alt: "Hindi media coverage 3"
+                youtubeUrl: "https://www.youtube.com/embed/bCG-ehU6jt4",
+                alt: "English media coverage 6",
+                language: "english",
+                contentType: "speech"
             },
             {
                 id: 16,
-                title: "हिंदी मीडिया कवरेज 4",
+                title: "English Media Coverage 7",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/YGYJVaFbKO4",
-                alt: "Hindi media coverage 4"
+                youtubeUrl: "https://www.youtube.com/embed/3Mdvp88hzp8",
+                alt: "English media coverage 7",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 17,
-                title: "हिंदी मीडिया कवरेज 5",
+                title: "English Media Coverage 8",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/bhhYCk-5YLw",
-                alt: "Hindi media coverage 5"
+                youtubeUrl: "https://www.youtube.com/embed/7ppGjJnwQgU",
+                alt: "English media coverage 8",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 18,
-                title: "हिंदी मीडिया कवरेज 6",
+                title: "English Media Coverage 9",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/jzvE-f8p4Uc",
-                alt: "Hindi media coverage 6"
-            }
-        ],
-        marathi: [
+                youtubeUrl: "https://www.youtube.com/embed/O2y_r8Cs6u4",
+                alt: "English media coverage 9",
+                language: "english",
+                contentType: "debate"
+            },
+            // Hindi Videos
             {
                 id: 19,
-                title: "मराठी मीडिया कव्हरेज 1",
+                title: "हिंदी मीडिया कवरेज 1",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/_fDm0ETkbNU",
-                alt: "Marathi media coverage 1"
+                youtubeUrl: "https://www.youtube.com/embed/BnYbx2YkTrM",
+                alt: "Hindi media coverage 1",
+                language: "hindi",
+                contentType: "interview"
             },
             {
                 id: 20,
-                title: "मराठी मीडिया कव्हरेज 2",
+                title: "हिंदी मीडिया कवरेज 2",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/mmL25rFmzc0",
-                alt: "Marathi media coverage 2"
+                youtubeUrl: "https://www.youtube.com/embed/hUsAk6swjUc",
+                alt: "Hindi media coverage 2",
+                language: "hindi",
+                contentType: "debate"
             },
             {
                 id: 21,
-                title: "मराठी मीडिया कव्हरेज 3",
+                title: "हिंदी मीडिया कवरेज 3",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/HseKCWGvrVI",
-                alt: "Marathi media coverage 3"
+                youtubeUrl: "https://www.youtube.com/embed/tSDJFI8kbtU",
+                alt: "Hindi media coverage 3",
+                language: "hindi",
+                contentType: "speech"
             },
             {
                 id: 22,
-                title: "मराठी मीडिया कव्हरेज 4",
+                title: "हिंदी मीडिया कवरेज 4",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/sh8OJo_OmFQ",
-                alt: "Marathi media coverage 4"
+                youtubeUrl: "https://www.youtube.com/embed/YGYJVaFbKO4",
+                alt: "Hindi media coverage 4",
+                language: "hindi",
+                contentType: "interview"
             },
             {
                 id: 23,
-                title: "मराठी मीडिया कव्हरेज 5",
+                title: "हिंदी मीडिया कवरेज 5",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/tdISQDd3fCg",
-                alt: "Marathi media coverage 5"
+                youtubeUrl: "https://www.youtube.com/embed/bhhYCk-5YLw",
+                alt: "Hindi media coverage 5",
+                language: "hindi",
+                contentType: "debate"
             },
             {
                 id: 24,
-                title: "मराठी मीडिया कव्हरेज 6",
+                title: "हिंदी मीडिया कवरेज 6",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/uPH7PDvczQc",
-                alt: "Marathi media coverage 6"
-            }
-        ],
-        interviews: [
+                youtubeUrl: "https://www.youtube.com/embed/jzvE-f8p4Uc",
+                alt: "Hindi media coverage 6",
+                language: "hindi",
+                contentType: "speech"
+            },
+            // Marathi Videos
             {
                 id: 25,
-                title: "Interview 1",
+                title: "मराठी मीडिया कव्हरेज 1",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/RSAat1SjRg4",
-                alt: "Interview 1"
+                youtubeUrl: "https://www.youtube.com/embed/_fDm0ETkbNU",
+                alt: "Marathi media coverage 1",
+                language: "marathi",
+                contentType: "interview"
             },
             {
                 id: 26,
-                title: "Interview 2",
+                title: "मराठी मीडिया कव्हरेज 2",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/gMEJscBWm0Y",
-                alt: "Interview 2"
+                youtubeUrl: "https://www.youtube.com/embed/mmL25rFmzc0",
+                alt: "Marathi media coverage 2",
+                language: "marathi",
+                contentType: "debate"
             },
             {
                 id: 27,
-                title: "Interview 3",
+                title: "मराठी मीडिया कव्हरेज 3",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/O6IopL2sv9U",
-                alt: "Interview 3"
+                youtubeUrl: "https://www.youtube.com/embed/HseKCWGvrVI",
+                alt: "Marathi media coverage 3",
+                language: "marathi",
+                contentType: "speech"
             },
             {
                 id: 28,
-                title: "Interview 4",
+                title: "मराठी मीडिया कव्हरेज 4",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/bSr58uGqP04",
-                alt: "Interview 4"
+                youtubeUrl: "https://www.youtube.com/embed/sh8OJo_OmFQ",
+                alt: "Marathi media coverage 4",
+                language: "marathi",
+                contentType: "interview"
             },
             {
                 id: 29,
-                title: "Interview 5",
+                title: "मराठी मीडिया कव्हरेज 5",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/OMMZX91dqEA",
-                alt: "Interview 5"
+                youtubeUrl: "https://www.youtube.com/embed/tdISQDd3fCg",
+                alt: "Marathi media coverage 5",
+                language: "marathi",
+                contentType: "debate"
             },
             {
                 id: 30,
-                title: "Interview 6",
+                title: "मराठी मीडिया कव्हरेज 6",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/p_iv5q-vzJs",
-                alt: "Interview 6"
-            }
-        ],
-        debates: [
+                youtubeUrl: "https://www.youtube.com/embed/uPH7PDvczQc",
+                alt: "Marathi media coverage 6",
+                language: "marathi",
+                contentType: "speech"
+            },
+            // Additional Interviews
             {
                 id: 31,
-                title: "Debate 1",
+                title: "Interview 1",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/2kRmkBz5GlA",
-                alt: "Debate 1"
+                youtubeUrl: "https://www.youtube.com/embed/RSAat1SjRg4",
+                alt: "Interview 1",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 32,
-                title: "Debate 2",
+                title: "Interview 2",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/IQJIoeRevAU",
-                alt: "Debate 2"
+                youtubeUrl: "https://www.youtube.com/embed/gMEJscBWm0Y",
+                alt: "Interview 2",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 33,
-                title: "Debate 3",
+                title: "Interview 3",
                 thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/xKanXqRbKNw",
-                alt: "Debate 3"
+                youtubeUrl: "https://www.youtube.com/embed/O6IopL2sv9U",
+                alt: "Interview 3",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 34,
-                title: "Debate 4",
+                title: "Interview 4",
                 thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/xPJDO55hcKY",
-                alt: "Debate 4"
+                youtubeUrl: "https://www.youtube.com/embed/bSr58uGqP04",
+                alt: "Interview 4",
+                language: "english",
+                contentType: "interview"
             },
             {
                 id: 35,
-                title: "Debate 5",
+                title: "Interview 5",
                 thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/28YiMCsfeMo",
-                alt: "Debate 5"
-            }
-        ],
-        speeches: [
-            {
-                id: 36,
-                title: "Speech 1",
-                thumbnail: "i/arun-detective.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/PsS1RZAoQ7Y",
-                alt: "Speech 1"
+                youtubeUrl: "https://www.youtube.com/embed/OMMZX91dqEA",
+                alt: "Interview 5",
+                language: "english",
+                contentType: "interview"
             },
             {
+                id: 36,
+                title: "Interview 6",
+                thumbnail: "i/arun-angry.webp",
+                youtubeUrl: "https://www.youtube.com/embed/p_iv5q-vzJs",
+                alt: "Interview 6",
+                language: "english",
+                contentType: "interview"
+            },
+            // Additional Debates
+            {
                 id: 37,
-                title: "Speech 2",
-                thumbnail: "i/arun2.jpg",
-                youtubeUrl: "https://www.youtube.com/embed/9fvRZZN8vGo",
-                alt: "Speech 2"
+                title: "Debate 1",
+                thumbnail: "i/arun-detective.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/2kRmkBz5GlA",
+                alt: "Debate 1",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 38,
-                title: "Speech 3",
-                thumbnail: "i/arun-angry.webp",
-                youtubeUrl: "https://www.youtube.com/embed/mQvG-4b2nhk",
-                alt: "Speech 3"
+                title: "Debate 2",
+                thumbnail: "i/arun2.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/IQJIoeRevAU",
+                alt: "Debate 2",
+                language: "english",
+                contentType: "debate"
             },
             {
                 id: 39,
+                title: "Debate 3",
+                thumbnail: "i/arun-angry.webp",
+                youtubeUrl: "https://www.youtube.com/embed/xKanXqRbKNw",
+                alt: "Debate 3",
+                language: "english",
+                contentType: "debate"
+            },
+            {
+                id: 40,
+                title: "Debate 4",
+                thumbnail: "i/arun-detective.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/xPJDO55hcKY",
+                alt: "Debate 4",
+                language: "english",
+                contentType: "debate"
+            },
+            {
+                id: 41,
+                title: "Debate 5",
+                thumbnail: "i/arun2.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/28YiMCsfeMo",
+                alt: "Debate 5",
+                language: "english",
+                contentType: "debate"
+            },
+            // Additional Speeches
+            {
+                id: 42,
+                title: "Speech 1",
+                thumbnail: "i/arun-detective.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/PsS1RZAoQ7Y",
+                alt: "Speech 1",
+                language: "english",
+                contentType: "speech"
+            },
+            {
+                id: 43,
+                title: "Speech 2",
+                thumbnail: "i/arun2.jpg",
+                youtubeUrl: "https://www.youtube.com/embed/9fvRZZN8vGo",
+                alt: "Speech 2",
+                language: "english",
+                contentType: "speech"
+            },
+            {
+                id: 44,
+                title: "Speech 3",
+                thumbnail: "i/arun-angry.webp",
+                youtubeUrl: "https://www.youtube.com/embed/mQvG-4b2nhk",
+                alt: "Speech 3",
+                language: "english",
+                contentType: "speech"
+            },
+            {
+                id: 45,
                 title: "Speech 4",
                 thumbnail: "i/arun-detective.jpg",
                 youtubeUrl: "https://www.youtube.com/embed/EhHVN8Z1hv8",
-                alt: "Speech 4"
+                alt: "Speech 4",
+                language: "english",
+                contentType: "speech"
             }
         ]
     };
 
-    // Function to create media card HTML with embedded YouTube video
+    // Current filter state
+    let currentFilters = {
+        language: 'all',
+        contentType: 'all'
+    };
+
+    // Function to create media card HTML with embedded YouTube video and tags
     function createMediaCard(video) {
+        const languageLabels = {
+            'english': 'English',
+            'hindi': 'हिंदी',
+            'marathi': 'मराठी'
+        };
+        
+        const contentTypeLabels = {
+            'interview': 'Interview',
+            'debate': 'Debate',
+            'speech': 'Speech'
+        };
         
         return `
             <div class="col-lg-4 mb-4">
@@ -353,13 +456,92 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="media-info">
                         <h4>${video.title}</h4>
+                        <div class="video-tags">
+                            <span class="tag language-tag">${languageLabels[video.language] || video.language}</span>
+                            <span class="tag content-tag">${contentTypeLabels[video.contentType] || video.contentType}</span>
+                        </div>
                     </div>
                 </article>
             </div>
         `;
     }
 
-    // Function to render media sections
+    // Function to render unified media section with filtering
+    function renderUnifiedMediaSection() {
+        const mediaContainer = document.querySelector('#unified-media-section .row');
+        if (mediaContainer) {
+            // Show all videos by default
+            const filteredVideos = getFilteredVideos();
+            mediaContainer.innerHTML = filteredVideos.map(createMediaCard).join('');
+        }
+    }
+
+    // Function to get filtered videos based on current filters
+    function getFilteredVideos() {
+        const selectedLanguage = currentFilters.language;
+        const selectedContentType = currentFilters.contentType;
+        
+        let filtered = mediaConfig.allVideos;
+        
+        if (selectedLanguage && selectedLanguage !== 'all') {
+            filtered = filtered.filter(v => v.language === selectedLanguage);
+        }
+        
+        if (selectedContentType && selectedContentType !== 'all') {
+            filtered = filtered.filter(v => v.contentType === selectedContentType);
+        }
+        
+        return filtered;
+    }
+
+    // Function to update filters and re-render
+    function updateFilters(language = null, contentType = null) {
+        if (language !== null) currentFilters.language = language;
+        if (contentType !== null) currentFilters.contentType = contentType;
+        
+        // Update active filter buttons
+        updateFilterButtonStates();
+        
+        // Re-render the media section
+        renderUnifiedMediaSection();
+        
+        // Update video count
+        updateVideoCount();
+    }
+
+    // Function to update filter button states
+    function updateFilterButtonStates() {
+        // Update language filter buttons
+        document.querySelectorAll('.language-filter-btn').forEach(btn => {
+            const language = btn.dataset.language;
+            if (language === currentFilters.language || (language === 'all' && currentFilters.language === 'all')) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        
+        // Update content type filter buttons
+        document.querySelectorAll('.content-filter-btn').forEach(btn => {
+            const contentType = btn.dataset.contentType;
+            if (contentType === currentFilters.contentType || (contentType === 'all' && currentFilters.contentType === 'all')) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+
+    // Function to update video count display
+    function updateVideoCount() {
+        const countElement = document.getElementById('video-count');
+        if (countElement) {
+            const filteredVideos = getFilteredVideos();
+            countElement.textContent = `${filteredVideos.length} video${filteredVideos.length !== 1 ? 's' : ''} found`;
+        }
+    }
+
+    // Function to render media sections (legacy - keeping for compatibility)
     function renderMediaSections() {
         // Render featured media (home page)
         const featuredContainer = document.querySelector('.media-section .row');
@@ -367,53 +549,15 @@ document.addEventListener('DOMContentLoaded', function() {
             featuredContainer.innerHTML = mediaConfig.featured.map(createMediaCard).join('');
         }
 
-        // Render English section
-        const englishContainer = document.querySelector('#english-section .row');
-        if (englishContainer) {
-            englishContainer.innerHTML = mediaConfig.english.map(createMediaCard).join('');
-        }
-
-        // Render Hindi section
-        const hindiContainer = document.querySelector('#hindi-section .row');
-        if (hindiContainer) {
-            hindiContainer.innerHTML = mediaConfig.hindi.map(createMediaCard).join('');
-        }
-
-        // Render Marathi section
-        const marathiContainer = document.querySelector('#marathi-section .row');
-        if (marathiContainer) {
-            marathiContainer.innerHTML = mediaConfig.marathi.map(createMediaCard).join('');
-        }
-
-        // Render Interviews section
-        const interviewsContainer = document.querySelector('#interviews-section .row');
-        if (interviewsContainer) {
-            interviewsContainer.innerHTML = mediaConfig.interviews.map(createMediaCard).join('');
-        }
-
-        // Render Debates section
-        const debatesContainer = document.querySelector('#debates-section .row');
-        if (debatesContainer) {
-            debatesContainer.innerHTML = mediaConfig.debates.map(createMediaCard).join('');
-        }
-
-        // Render Speeches section
-        const speechesContainer = document.querySelector('#speeches-section .row');
-        if (speechesContainer) {
-            speechesContainer.innerHTML = mediaConfig.speeches.map(createMediaCard).join('');
-        }
+        // Render unified media section
+        renderUnifiedMediaSection();
     }
 
     // Function to get YouTube URL by video ID
     function getYouTubeUrl(videoId) {
         const allVideos = [
             ...mediaConfig.featured,
-            ...mediaConfig.english,
-            ...mediaConfig.hindi,
-            ...mediaConfig.marathi,
-            ...mediaConfig.interviews,
-            ...mediaConfig.debates,
-            ...mediaConfig.speeches
+            ...mediaConfig.allVideos
         ];
         const video = allVideos.find(v => v.id == videoId);
         return video ? video.youtubeUrl : null;
@@ -432,12 +576,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!video.id) {
                 const allVideos = [
                     ...mediaConfig.featured,
-                    ...mediaConfig.english,
-                    ...mediaConfig.hindi,
-                    ...mediaConfig.marathi,
-                    ...mediaConfig.interviews,
-                    ...mediaConfig.debates,
-                    ...mediaConfig.speeches
+                    ...mediaConfig.allVideos
                 ];
                 video.id = Math.max(...allVideos.map(v => v.id)) + 1;
             }
@@ -497,12 +636,7 @@ document.addEventListener('DOMContentLoaded', function() {
         getVideo: function(videoId) {
             const allVideos = [
                 ...mediaConfig.featured,
-                ...mediaConfig.english,
-                ...mediaConfig.hindi,
-                ...mediaConfig.marathi,
-                ...mediaConfig.interviews,
-                ...mediaConfig.debates,
-                ...mediaConfig.speeches
+                ...mediaConfig.allVideos
             ];
             return allVideos.find(v => v.id == videoId);
         },
@@ -765,6 +899,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Filter button event listeners
+    document.addEventListener('click', function(e) {
+        // Language filter buttons
+        if (e.target.closest('.language-filter-btn')) {
+            const btn = e.target.closest('.language-filter-btn');
+            const language = btn.dataset.language;
+            updateFilters(language, null);
+        }
+        
+        // Content type filter buttons
+        if (e.target.closest('.content-filter-btn')) {
+            const btn = e.target.closest('.content-filter-btn');
+            const contentType = btn.dataset.contentType;
+            updateFilters(null, contentType);
+        }
+    });
+
     // Close sidebar when clicking outside on mobile
     document.addEventListener('click', function(e) {
         if (window.innerWidth < 992) {
@@ -945,12 +1096,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialize the page
-    renderMediaSections();
-    attachEventListeners();
-    setupLazyLoading();
-    handleHashOnLoad();
+    function initializePage() {
+        // Render media sections
+        renderMediaSections();
+        
+        // Initialize video count
+        updateVideoCount();
+        
+        // Initialize filter button states
+        updateFilterButtonStates();
+        
+        // Attach event listeners
+        attachEventListeners();
+        
+        // Setup lazy loading
+        setupLazyLoading();
+        
+        // Handle hash on load
+        handleHashOnLoad();
+    }
 
-    // Initialize page
+    // Call initialization
+    initializePage();
+
     console.log(` _____                 
 |  _  |___ ___ ___ _ _ 
 |     |  _|   | .'| | |
