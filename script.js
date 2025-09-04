@@ -1119,11 +1119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call initialization
     initializePage();
 
-    console.log(` _____                 
-|  _  |___ ___ ___ _ _ 
-|     |  _|   | .'| | |
-|__|__|_| |_|_|__,|\_/                                                           
- https://rnv.is-a.dev`);
+console.log("%cArnav","color: #FF6B6B; font-size: 70px; font-weight: bold;");
     
     // Track page performance
     if ('performance' in window) {

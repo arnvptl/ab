@@ -145,14 +145,9 @@
             </li>
             <li role="none">
                 <a href="#media1" class="nav-link" data-section="media1" role="menuitem">
-                    <i class="fas fa-video" aria-hidden="true"></i> Media 1
+                    <i class="fas fa-video" aria-hidden="true"></i> Media
                 </a>
             </li>  
-            <li role="none">
-                <a href="#media2" class="nav-link" data-section="media2" role="menuitem">
-                    <i class="fas fa-video" aria-hidden="true"></i> Media 2
-                </a>
-            </li>
             <li role="none">
                 <a href="#contact" class="nav-link" data-section="contact" role="menuitem">
                     <i class="fas fa-envelope" aria-hidden="true"></i> Contact
@@ -225,7 +220,7 @@
                     <div class="row mt-4">
                         <!-- Featured media cards will be dynamically generated here -->
                     </div>
-                    <button class="btn btn-primary mt-3 learn-more-btn" data-target="media" aria-label="View all media content">
+                    <button class="btn btn-primary mt-3 learn-more-btn" data-target="media1" aria-label="View all media content">
                         <i class="fas fa-video" aria-hidden="true"></i> View All
                     </button>
                 </section>
@@ -566,92 +561,61 @@
             <div class="container-fluid">
                 <header>
                     <h1 id="media-heading">Media Coverage and Interviews</h1>
+                    <p class="text-muted">Filter videos by language and content type</p>
                 </header>
                 
-                <!-- Language Navigation Buttons -->
-                <nav class="language-nav mt-4" aria-label="Language selection">
-                    <div class="d-flex justify-content-center flex-wrap gap-3">
-                        <button class="btn btn-outline-primary language-scroll-btn" data-target="english-section">
-                            <i class="fas fa-globe" aria-hidden="true"></i> English
-                        </button>
-                        <button class="btn btn-outline-primary language-scroll-btn" data-target="hindi-section">
-                            <i class="fas fa-language" aria-hidden="true"></i> हिंदी
-                        </button>
-                        <button class="btn btn-outline-primary language-scroll-btn" data-target="marathi-section">
-                            <i class="fas fa-comments" aria-hidden="true"></i> मराठी
-                        </button>
+                <!-- Filter Controls -->
+                <div class="filter-controls mt-4">
+                    <!-- Language Filter -->
+                    <div class="filter-group mb-4">
+                        <h4 class="filter-label">Language</h4>
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+                            <button class="btn btn-outline-primary language-filter-btn active" data-language="all">
+                                <i class="fas fa-globe" aria-hidden="true"></i> All Languages
+                            </button>
+                            <button class="btn btn-outline-primary language-filter-btn" data-language="english">
+                                <i class="fas fa-language" aria-hidden="true"></i> English
+                            </button>
+                            <button class="btn btn-outline-primary language-filter-btn" data-language="hindi">
+                                <i class="fas fa-comments" aria-hidden="true"></i> हिंदी
+                            </button>
+                            <button class="btn btn-outline-primary language-filter-btn" data-language="marathi">
+                                <i class="fas fa-comments" aria-hidden="true"></i> मराठी
+                            </button>
+                        </div>
                     </div>
-                </nav>
-                <hr>
-
-                <!-- English Section -->
-                <section class="language-section mb-5 mt-5" id="english-section" aria-labelledby="english-media-heading">
-                    <h2 class="section-heading" id="english-media-heading">English Media Coverage</h2>
-                    <div class="row mt-4">
-                        <!-- English media cards will be dynamically generated here -->
+                    
+                    <!-- Content Type Filter -->
+                    <div class="filter-group mb-4">
+                        <h4 class="filter-label">Content Type</h4>
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+                            <button class="btn btn-outline-primary content-filter-btn active" data-content-type="all">
+                                <i class="fas fa-video" aria-hidden="true"></i> All Types
+                            </button>
+                            <button class="btn btn-outline-primary content-filter-btn" data-content-type="interview">
+                                <i class="fas fa-microphone" aria-hidden="true"></i> Interviews
+                            </button>
+                            <button class="btn btn-outline-primary content-filter-btn" data-content-type="debate">
+                                <i class="fas fa-users" aria-hidden="true"></i> Debates
+                            </button>
+                            <button class="btn btn-outline-primary content-filter-btn" data-content-type="speech">
+                                <i class="fas fa-bullhorn" aria-hidden="true"></i> Speeches
+                            </button>
+                        </div>
                     </div>
-                </section>
-
-                <!-- Hindi Section -->
-                <section class="language-section mb-5" id="hindi-section" aria-labelledby="hindi-media-heading">
-                    <h2 class="section-heading" id="hindi-media-heading">हिंदी मीडिया कवरेज</h2>
-                    <div class="row mt-4">
-                        <!-- Hindi media cards will be dynamically generated here -->
-                    </div>
-                </section>
-
-                <!-- Marathi Section -->
-                <section class="language-section mb-5" id="marathi-section" aria-labelledby="marathi-media-heading">
-                    <h2 class="section-heading" id="marathi-media-heading">मराठी मीडिया कव्हरेज</h2>
-                    <div class="row mt-4">
-                        <!-- Marathi media cards will be dynamically generated here -->
-                    </div>
-                </section>
-            </div>
-        </section>
-        <section id="media2" class="content-section" aria-labelledby="media-heading">
-            <div class="container-fluid">
-                <header>
-                    <h1 id="media-heading">Media Coverage and Interviews</h1>
-                </header>
+                </div>
                 
-                <!-- Language Navigation Buttons -->
-                <nav class="language-nav mt-4" aria-label="Language selection">
-                    <div class="d-flex justify-content-center flex-wrap gap-3">
-                        <button class="btn btn-outline-primary language-scroll-btn" data-target="interviews-section">
-                            <i class="fas fa-microphone" aria-hidden="true"></i> Interviews
-                        </button>
-                        <button class="btn btn-outline-primary language-scroll-btn" data-target="debates-section">
-                            <i class="fas fa-users" aria-hidden="true"></i> Debates
-                        </button>
-                        <button class="btn btn-outline-primary language-scroll-btn" data-target="speeches-section">
-                            <i class="fas fa-bullhorn" aria-hidden="true"></i> Speeches
-                        </button>
-                    </div>
-                </nav>
+                <!-- Video Count -->
+                <div class="text-center mb-4">
+                    <p id="video-count" class="text-muted">Loading videos...</p>
+                </div>
+                
                 <hr>
 
-                <!-- Interviews Section -->
-                <section class="language-section mb-5" id="interviews-section" aria-labelledby="interviews-media-heading">
-                    <h2 class="section-heading" id="interviews-media-heading">Interviews</h2>
+                <!-- Unified Media Section -->
+                <section class="unified-media-section" id="unified-media-section">
                     <div class="row mt-4">
-                        <!-- Interview media cards will be dynamically generated here -->
-                    </div>
-                </section>
-
-                <!-- Debates Section -->
-                <section class="language-section mb-5" id="debates-section" aria-labelledby="debates-media-heading">
-                    <h2 class="section-heading" id="debates-media-heading">Debates</h2>
-                    <div class="row mt-4">
-                        <!-- Debate media cards will be dynamically generated here -->
-                    </div>
-                </section>
-
-                <!-- Speeches Section -->
-                <section class="language-section mb-5" id="speeches-section" aria-labelledby="speeches-media-heading">
-                    <h2 class="section-heading" id="speeches-media-heading">Speeches</h2>
-                    <div class="row mt-4">
-                        <!-- Speech media cards will be dynamically generated here -->
+                        <!-- All media cards will be dynamically generated here -->
                     </div>
                 </section>
             </div>
